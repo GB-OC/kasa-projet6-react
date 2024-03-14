@@ -1,0 +1,17 @@
+.card {
+  width: 340px; /* Largeur de la carte */
+  height: 340px; /* Hauteur de la carte */
+  background-color: #FF6060;
+  border-radius: 10px;
+  background: linear-gradient(rgba(255, 96, 96, 1), rgb(214, 45, 45)99%);
+  position: relative; /* Pour positionner le titre par rapport à la carte */
+}
+
+.card-content {
+  position: absolute; /* Pour positionner le titre à l'intérieur de la carte */
+  bottom: 20px; /* Décalage de 20px depuis le bas */
+  left: 20px; /* Décalage de 20px depuis la gauche */
+  color: white; /* Couleur du texte */
+  font-size: 18px; /* Taille de la police */
+  font-weight: bold;
+}

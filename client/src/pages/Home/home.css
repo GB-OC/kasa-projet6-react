@@ -1,0 +1,62 @@
+.banner-container {
+  position: relative;
+  max-width: 1240px;
+  height: 223px;
+  margin: 0 auto;
+  margin-top: 3.125rem; /* Marge de 50px en rem */
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  filter: brightness(50%);
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Montserrat, sans-serif; /* Utilisation de la police Montserrat */
+  font-size: 48px; /* Taille de la police de 48 pixels */
+  font-weight: bold; /* Texte en gras */
+  text-align: center;
+  letter-spacing: 1px; /* Espacement entre les lettres */
+  white-space: nowrap; /* Empêche le texte de se diviser sur plusieurs lignes */
+}
+
+.container {
+  display: block;
+  justify-content: center; /* Centre le contenu horizontalement */
+  margin-left: 7%;
+  margin-right: 7%;acceuil ui 75%
+  font-family: Montserrat, sans-serif; /* Utilisation de la police Montserrat pour tout le texte */
+  font-size: 24px; /* Taille de la police à 24 pixels */
+}
+
+.gray-square {
+  width: 100%; /* Ajuster la largeur à 100% */
+  max-width: 1240px; /* Utiliser une largeur maximale de 1240px */
+  height: auto; /* Hauteur automatique pour conserver les proportions */
+  background-color: #F6F6F6;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(33.3333% - 20px), 1fr)); /* Trois cartes maximum par ligne */
+  grid-auto-rows: minmax(50%, auto); /* Deux cartes de hauteur */
+  gap: 20px;
+  padding-top: 2.33rem;
+  padding-bottom: 2.33rem;
+}
+
+.card {
+  background-color: #FF6060;
+  border-radius: 10px;
+  background: linear-gradient(rgba(255, 96, 96, 1), rgba(255, 96, 96, 0));
+}

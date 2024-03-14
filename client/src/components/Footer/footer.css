@@ -1,0 +1,33 @@
+.footer {
+  margin-top: auto; /* Supprime la marge en haut */
+  margin-bottom: 0; /* Supprime la marge en bas */
+  text-align: center; /* Centre le contenu horizontalement */
+  background-color: black; /* Définissez la couleur de fond sur noir */
+  width: 100%; /* Pour qu'il occupe toute la largeur */
+  bottom: 0; /* Place le footer en bas de la page */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Aligne les éléments verticalement */
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-top: 2.75rem;
+  margin-bottom: 1.20rem;
+}
+
+.logo {
+  width: 100px; /* Ajustez la taille de l'image selon vos besoins */
+  height: auto;
+}
+
+.copyright {
+  font-family: Montserrat, sans-serif; /* Utilise la police Montserrat */
+  color: white; /* Couleur du texte */
+  margin-top: 0,41rem; /* Marge au-dessus du texte */
+  padding-bottom: 1.25rem;
+}
