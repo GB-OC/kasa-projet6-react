@@ -1,0 +1,28 @@
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tag-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 115px;
+    height: 25px;
+    background-color: #FF6060;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  @media only screen and (max-width: 760px) {
+    .tag-item {
+      width: 84px;
+      height: 18px;
+      background-color: #FF6060;
+      color: white;
+      font-size: 10px;
+    }
+  }

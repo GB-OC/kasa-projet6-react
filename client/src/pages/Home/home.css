@@ -3,7 +3,10 @@
   max-width: 1240px;
   height: 223px;
   margin: 0 auto;
-  margin-top: 3.125rem; /* Marge de 50px en rem */
+  margin-top: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner {
@@ -11,52 +14,96 @@
   height: 100%;
   border-radius: 25px;
   filter: brightness(50%);
-  object-fit: cover;
+  object-fit: none;
+  max-width: 1240px;
+  position: absolute;
 }
 
 .banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: white;
-  font-family: Montserrat, sans-serif; /* Utilisation de la police Montserrat */
-  font-size: 48px; /* Taille de la police de 48 pixels */
-  font-weight: bold; /* Texte en gras */
+  font-family: Montserrat, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
   text-align: center;
-  letter-spacing: 1px; /* Espacement entre les lettres */
-  white-space: nowrap; /* Empêche le texte de se diviser sur plusieurs lignes */
+  letter-spacing: 1px;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .container {
   display: block;
-  justify-content: center; /* Centre le contenu horizontalement */
+  justify-content: center;
   margin-left: 7%;
   margin-right: 7%;
-  font-family: Montserrat, sans-serif; /* Utilisation de la police Montserrat pour tout le texte */
-  font-size: 24px; /* Taille de la police à 24 pixels */
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
 }
 
 .gray-square {
-  width: 100%; /* Ajuster la largeur à 100% */
-  max-width: 1240px; /* Utiliser une largeur maximale de 1240px */
-  height: auto; /* Hauteur automatique pour conserver les proportions */
-  background-color: #F6F6F6;
+  max-width: 1240px;
+  box-sizing: border-box;
+  height: auto;
+  background-color: #f6f6f6;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(calc(33.3333% - 20px), 1fr)); /* Trois cartes maximum par ligne */
-  grid-auto-rows: minmax(50%, auto); /* Deux cartes de hauteur */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(calc(33.3333% - 20px), 1fr)
+  ); 
+  grid-auto-rows: minmax(50%, auto); 
   gap: 20px;
-  padding-top: 2.33rem;
-  padding-bottom: 2.33rem;
+  padding-top: 3.7%;
+  padding-bottom: 2.8%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 .card {
-  background-color: #FF6060;
+  background-color: #ff6060;
   border-radius: 10px;
   background: linear-gradient(rgba(255, 96, 96, 1), rgba(255, 96, 96, 0));
+}
+
+@media only screen and (max-width: 760px) {
+  .banner-text {
+    text-align: left;
+    white-space: normal;
+    transform: none;
+    margin-left: 16px; /* Ajuster cette valeur en fonction de vos préférences */
+    margin-right: 39px;
+    font-size: 24px;
+    left: 0%;
+    top: 50%;
+  }
+
+  .gray-square {
+    display: block;
+    background-color: transparent;
+    margin: 0px;
+    margin-top: 22px;
+    margin-bottom: 27px;
+    padding: 0px;
+  }
+
+  .gray-square > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .banner-container {
+    height: 111px;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .banner-text {
+    font-size: max(
+      24px,
+      calc(24px + (48 - 24) * ((100vw - 760px) / (1259 - 760)))
+    );
+  }
 }

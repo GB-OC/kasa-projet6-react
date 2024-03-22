@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home/Home'; 
-import About from './pages/About/About'; 
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
 import NotFound from './components/NotFound';
-import Header from './components/Header/header'; // Importez le composant Header
-import Footer from './components/Footer/footer'; // Importez le composant Footer
+import Header from './components/Header/header';
+import Footer from './components/Footer/footer';
+import ListingDetail from './pages/ListingDetail/ListingDetail';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/listing-detail/:id" element={<ListingDetail />} /> 
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

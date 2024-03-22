@@ -1,12 +1,13 @@
 /* styles.css */
+ul {
+  padding-inline-start: 0; /* Réglez le padding à gauche à 0 */
+}
 
 .header {
   padding: 10px;
   margin: auto; /* Centrer horizontalement */
   margin-left: 7%;
   margin-right: 7%;
-  
-  
 }
 
 .header-content {
@@ -14,6 +15,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto; /* Centrer horizontalement */
+  max-width: 1240px;
+  align-items: flex-end;
+  flex-wrap: nowrap;
 }
 
 .logo-container {
@@ -24,7 +28,6 @@
 .logo {
   width: 210px;
   height: 68px;
-  margin-right: 10px;
 }
 
 .nav-links {
@@ -35,7 +38,13 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 24px;
-  line-height: 34.22px;
+  padding: 0px;
+  margin-left: 43px;
+  white-space: nowrap;
+}
+
+.nav-links a:-webkit-any-link {
+  color: black;
 }
 
 .nav-item {
@@ -44,4 +53,29 @@
 
 .nav-links li:first-child {
   margin-right: 57px;
+}
+
+@media only screen and (max-width: 760px) {
+  .nav-links {
+    font-size: 12px; /* Taille de police réduite pour les mobiles */
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .nav-links li:first-child {
+    margin-right: 27px;
+  }
+
+  .logo {
+    width: 145px;
+    height: 46px;
+  }
+
+  .header {
+    margin-left: 5.6%;
+    margin-right: 5.6%;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
 }
