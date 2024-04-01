@@ -8,7 +8,7 @@ function Header(props) {
   return (
     <header className="header" style={{ margin: margin }}> {/* Utilisation de la prop margin */}
       <div className="header-content">
-        <div className="logo-container">
+        <div className="logo-container-top">
           <img src={logoSVG} alt="Logo de Kasa" className="logo" />
         </div>
         <nav>

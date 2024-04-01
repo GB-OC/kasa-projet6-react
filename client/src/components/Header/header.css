@@ -20,7 +20,7 @@ ul {
   flex-wrap: nowrap;
 }
 
-.logo-container {
+.logo-container-top {
   display: flex;
   align-items: center;
 }
@@ -57,9 +57,8 @@ ul {
 
 @media only screen and (max-width: 760px) {
   .nav-links {
-    font-size: 12px; /* Taille de police réduite pour les mobiles */
+    font-size: 12px; 
     padding: 0;
-    margin-bottom: 30px;
   }
 
   .nav-links li:first-child {

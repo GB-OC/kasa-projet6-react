@@ -1,4 +1,3 @@
-import React from "react";
 import recifImage from "./recif.png";
 import "./home.css";
 import "typeface-montserrat";

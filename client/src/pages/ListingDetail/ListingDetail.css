@@ -29,3 +29,13 @@
 .collapsible-description {
   margin-right: 75px;
 }
+
+.collapsible-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 76px;
+}
+
+.collapsible-grid-item {
+  grid-column: span 1;
+}
