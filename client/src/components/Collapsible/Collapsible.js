@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import chevronUp from "./ChevronUp.svg"; 
-import "./Collapsible.css";
+import "./Collapsible.sass";
 
 const Collapsible = ({ title, text }) => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,6 @@
 import filledStar from './star-active1.svg';
 import emptyStar from './star-inactive1.svg';
-import './StarRating.css';
+import './StarRating.sass';
 
 const StarRating = ({ rating }) => {
   const maxRating = 5;

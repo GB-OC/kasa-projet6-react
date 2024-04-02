@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import data from '../../data.json';
 import arrow from './ArrowVector.svg';
-import './ImageSlider.css'; 
+import './ImageSlider.sass'; 
 
 function ImageSlider({ id }) {
   const item = data.find(item => item.id === id);

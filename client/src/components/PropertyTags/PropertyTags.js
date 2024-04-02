@@ -1,4 +1,4 @@
-import "./PropertyTags.css";
+import "./PropertyTags.sass";
 
 const PropertyTags = ({ tags }) => {
   return (

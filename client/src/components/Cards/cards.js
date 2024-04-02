@@ -1,4 +1,4 @@
-import './cards.css'; // Importez le fichier CSS pour les styles de la carte
+import './cards.sass'; 
 import { Link } from 'react-router-dom';
 
 

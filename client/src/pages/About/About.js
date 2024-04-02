@@ -1,7 +1,7 @@
 import React from "react";
 import Collapsible from "../../components/Collapsible/Collapsible.js";
 import aboutImage from "./about.png";
-import "./About.css";
+import "./About.sass";
 
 function About() {
   return (

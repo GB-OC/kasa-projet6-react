@@ -1,4 +1,4 @@
-import './OwnerName.css';
+import './OwnerName.sass';
 
 function OwnerName({ name, picture }) {
   return (

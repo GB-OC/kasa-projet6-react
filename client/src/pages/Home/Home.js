@@ -1,5 +1,5 @@
 import recifImage from "./recif.png";
-import "./home.css";
+import "./home.sass";
 import "typeface-montserrat";
 import data from "../../data.json";
 

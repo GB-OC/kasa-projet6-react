@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import data from "../../data.json";
-import "./ListingDetail.css";
+import "./ListingDetail.sass";
 import ImageSlider from "../../components/ImageSlider/ImageSlider";
 import PropertyTitle from "../../components/PropertyTitle/PropertyTitle";
 import OwnerName from "../../components/OwnerName/OwnerName";

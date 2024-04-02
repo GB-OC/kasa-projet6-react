@@ -1,4 +1,4 @@
-import "./PropertyTitle.css";
+import "./PropertyTitle.sass";
 
 const PropertyTitle = ({ title, location }) => {
     const [city, department] = location.split(' - ');

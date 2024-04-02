@@ -1,5 +1,5 @@
 import logoNoir from './LOGOnoir.png'; // Assurez-vous de spécifier le chemin correct vers votre image
-import './footer.css'; 
+import './footer.sass'; 
 
 function Footer(props) {
   const { margin } = props; // Ajout de la réception de la prop margin

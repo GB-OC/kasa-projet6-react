@@ -6,7 +6,7 @@ import NotFound from './pages/NotFound/NotFound';
 import Header from './components/Header/header';
 import Footer from './components/Footer/footer';
 import ListingDetail from './pages/ListingDetail/ListingDetail';
-import './App.css'
+import './App.sass'
 
 function App() {
   return (

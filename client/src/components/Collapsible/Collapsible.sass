@@ -1,0 +1,54 @@
+.collapsible
+  width: 100%
+  border: none
+  border-radius: 5px
+  margin-bottom: 30px
+
+  &-header
+    background-color: #ff6060
+    color: white
+    padding: 10px
+    cursor: pointer
+    display: flex
+    border-radius: 5px
+    justify-content: space-between
+    position: relative
+    z-index: 1
+    align-items: center
+
+    &.open .collapsible-icon img
+      transform: rotate(-180deg)
+
+    &:not(.open) .collapsible-icon img
+      transform: rotate(0deg)
+
+  &-title
+    font-size: 18px
+    font-weight: bold
+
+  &-body
+    padding: 10px
+    overflow: hidden
+    background-color: rgba(246, 246, 246, 0.45)
+    border-radius: 5px
+
+    margin-top: -8px 
+    padding-top: 8px 
+
+    &.open
+      max-height: 1000px
+
+  &-text
+    font-size: 16px
+    line-height: 1.5
+    margin: 16px 20px
+
+  &-icon
+    font-size: 24px
+
+    img
+      transition: transform 0.3s ease
+      transform-origin: 50% 50%
+
+  @media (max-width: 760px)
+    margin-bottom: 20px
