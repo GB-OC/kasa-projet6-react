@@ -70,7 +70,7 @@
     text-align: left;
     white-space: normal;
     transform: none;
-    margin-left: 16px; /* Ajuster cette valeur en fonction de vos préférences */
+    margin-left: 16px; 
     margin-right: 39px;
     font-size: 24px;
     left: 0%;
@@ -78,12 +78,14 @@
   }
 
   .gray-square {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: transparent;
     margin: 0px;
     margin-top: 22px;
     margin-bottom: 27px;
     padding: 0px;
+    gap: 0px
   }
 
   .gray-square > *:not(:last-child) {

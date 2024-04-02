@@ -13,6 +13,14 @@ function ListingDetail() {
   const { id } = useParams();
   const apartment = data.find((apartment) => apartment.id === id);
 
+  const equipmentsList = (
+    <ul>
+      {apartment.equipments.map((equipment, index) => (
+        <li key={index}>{equipment}</li>
+      ))}
+    </ul>
+  );
+
   return (
     <div className="ListingDetail">
       <ImageSlider id={apartment.id} />
@@ -29,7 +37,7 @@ function ListingDetail() {
           <Collapsible title="Description" text={apartment.description} />
         </div>
         <div className="collapsible-grid-item">
-          <Collapsible title="Amenities" text="This is a filler text for amenities. You can replace it with actual amenities data." />
+          <Collapsible title="Équipements" text={equipmentsList} />
         </div>
       </div>
     </div>

@@ -1,15 +1,17 @@
 .star-rating {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.star-rating img {
+  height: 24px;
+  width: 24px;
+  margin-right: 2px;
+}
+
+@media (max-width: 760px) {
+  .star-rating img {
+    height: 18px;
+    width: 18px;
   }
-  
-  .star {
-    height: 24px;
-    width: 24px;
-    margin-right: 2px;
-    background-color: #E3E3E3;
-  }
-  
-  .filled-star {
-    background-color: #FF6060;
-  }
+}
