@@ -27,8 +27,6 @@ function ListingDetail() {
       <div className="listing-detail-top">
         <PropertyTitle title={apartment.title} location={apartment.location} />
         <OwnerName name={apartment.host.name} picture={apartment.host.picture} />
-      </div>
-      <div className="listing-detail-middle">
         <PropertyTags tags={apartment.tags} />
         <StarRating rating={apartment.rating} />
       </div>
