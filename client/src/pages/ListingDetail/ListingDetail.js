@@ -29,6 +29,10 @@ function ListingDetail() {
         <OwnerName name={apartment.host.name} picture={apartment.host.picture} />
         <PropertyTags tags={apartment.tags} />
         <StarRating rating={apartment.rating} />
+        <span className="owner-wrapper">
+        <StarRating rating={apartment.rating} className="hidden-rating" />
+        <OwnerName name={apartment.host.name} picture={apartment.host.picture} />
+        </span>
       </div>
       <div className="collapsible-grid">
         <div className="collapsible-grid-item">
