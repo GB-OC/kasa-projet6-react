@@ -8,10 +8,12 @@ import OwnerName from "../../components/OwnerName/OwnerName";
 import PropertyTags from "../../components/PropertyTags/PropertyTags";
 import StarRating from "../../components/StarRating/StarRating";
 import Collapsible from "../../components/Collapsible/Collapsible.js";
+import NotFound from '../NotFound/NotFound.js';
 
 function ListingDetail() {
   const { id } = useParams();
   const apartment = data.find((apartment) => apartment.id === id);
+  if (apartment==null) return (<NotFound />)
 
   const equipmentsList = (
     <ul>

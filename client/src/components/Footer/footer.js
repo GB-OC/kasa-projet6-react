@@ -1,8 +1,8 @@
-import logoNoir from './LOGOnoir.png'; // Assurez-vous de spécifier le chemin correct vers votre image
+import logoNoir from './LOGOnoir.png'; 
 import './footer.sass'; 
 
 function Footer(props) {
-  const { margin } = props; // Ajout de la réception de la prop margin
+  const { margin } = props; 
   return (
     <footer className="footer" style={{ margin: margin }}>
       <div className="footer-content">

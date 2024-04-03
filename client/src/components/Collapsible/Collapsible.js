@@ -17,7 +17,7 @@ const Collapsible = ({ title, text }) => {
           <img src={chevronUp} alt="chevron" className="chevron" />
         </div>
       </div>
-      <div className="collapsible-body" style={{ display: isOpen ? "block" : "none" }}>
+      <div className={"collapsible-body  " + (isOpen ? 'open' : '')}>                            
         <div className="collapsible-text">{text}</div>
       </div>
     </div>
